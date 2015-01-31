@@ -1,0 +1,5 @@
+# exclude bower_components
+bower_components/**
+
+# exclude node_modules
+node_modules/**
