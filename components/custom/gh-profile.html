@@ -4,6 +4,15 @@
 <polymer-element name="gh-profile" attributes="username">
 	<template>
 		<style>
+			#gh-profile-summary {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			#github-avatar {
+				width: 15%;
+				height: 15%;
+				border-radius:50%;
+			}
 		</style>
 		<core-ajax 
 			auto 
@@ -11,15 +20,20 @@
 			handleAs="json" 
 			response="{{resp}}">
 		</core-ajax>
-		<h4>{{username}} Repos</h4>
-		<ul>
-			<template repeat="{{r in resp}}">
-				<li><a href="{{r.html_url}}">{{r.name}}</a></li>
-			</template>
-		</ul>
+		<section id="gh-profile-summary">
+			<h4>{{username}} repos</h4>
+			<img id="github-avatar" src="{{resp[0].owner.avatar_url}}" alt="Github Profile"></img>
+			<ul>
+				<template repeat="{{r in resp}}">
+					<li><a href="{{r.html_url}}">{{r.name}}</a></li>
+				</template>
+			</ul>
+		</section>
 	</template>
 
 	<script>
-		Polymer({});
+		Polymer({
+
+		});
 	</script>
 </polmer-element>

@@ -2,12 +2,23 @@
 <head lang="en">
     <meta charset="utf-8">
     <title>Github Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="I'm Darwin Hang. This is my Github user site page. I wanted to have a landing page for all my github projects, so I created this site.">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="components/webcomponentsjs/webcomponents.js"></script>
 </head>
-<body>
-    <h2>This is my user page, broken for you</h2>
-    <link rel="import" href="components/custom/gh-profile.html">
+<body class="site">
+    <header>
+        <h1>Github User Page</h1>
+    </header>
+    <main class="site-content">
+        <div class="gh-info">
+            <link rel="import" href="components/custom/gh-profile.html">
 
-    <gh-profile username="winious"></gh-profile>
+            <gh-profile username="winious"></gh-profile>
+        </div>
+    </main>
+    <footer>
+        <h4>Copyright &copy 2015 DarwinHang</h4>
+    </footer>
 </body>
