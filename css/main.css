@@ -18,23 +18,50 @@ html footer {
   flex: none;
 }
 .banner-style {
-  background: #f0f0f0;
-  color: #3A3636;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background: #f8fffa;
 }
 header {
-  background: #f0f0f0;
-  color: #3A3636;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background: #f8fffa;
 }
-header h1 {
+header .nav-bar {
+  color: #06d28c;
+  font-size: 1.3em;
+}
+header .nav-bar ul {
+  list-style: none;
+}
+header .message {
+  height: 12em;
+  color: #ffffff;
+  background: #06d28c;
+  text-align: center;
+}
+main {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background: #f8fffa;
   text-align: center;
 }
 footer {
-  background: #f0f0f0;
-  color: #3A3636;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background: #f8fffa;
+  background: #c1f9e5;
 }
 footer h4 {
+  color: #00b07b;
   text-align: center;
 }
+.gh-username {
+  font-style: italic;
+}
 .gh-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 1.3em 0;
+}
+.gh-info gh-profile {
+  width: 50%;
+  padding: 50px;
 }

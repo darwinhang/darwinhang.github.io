@@ -1,20 +1,41 @@
 .banner-style {
-	background: #f0f0f0;
-	color: #3A3636;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background: @off-white;
 }
 
 header {
 	.banner-style();
 
-	h1 {
+	.nav-bar {
+		color: @light-green;
+		font-size: 1.3em;
+
+		ul {
+			list-style: none;
+		}
+	}
+
+	.message {
+		height: 12em;
+		color: @white;
+		background: @light-green;	
 		text-align: center;
 	}
+}
+
+main {
+	.banner-style();
+
+	text-align: center;
 }
 
 footer {
 	.banner-style();
 
+	background: @blue-green;
+
 	h4 {
+		color: @dark-green;
 		text-align: center;
 	}
 }

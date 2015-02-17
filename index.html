@@ -1,22 +1,36 @@
 <!doctype html>
 <head lang="en">
     <meta charset="utf-8">
-    <title>Github Landing Page</title>
+    <title>Winious Github</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="I'm Darwin Hang. This is my Github user site page. I wanted to have a landing page for all my github projects, so I created this site.">
+    <meta name="description" content="I'm Darwin Hang. This is my Github user site page. I wanted a landing page for all my github projects where I could have more control over the presentation.">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="components/webcomponentsjs/webcomponents.js"></script>
 </head>
-<body class="site">
+<body>
     <header>
-        <h1>Github User Page</h1>
+        <div class="nav-bar" role="banner">
+            <ul>
+                <li>Winious</li>
+                <li><a href="darblog">DarBlog</a></li>
+            </ul>
+        </div>
+        <div class="message">
+            <h1><span class="gh-username">Winious's</span> Space</h1>
+        </div>
     </header>
-    <main class="site-content">
+    <main>
         <div class="gh-info">
             <link rel="import" href="components/custom/gh-profile.html">
 
             <gh-profile username="winious"></gh-profile>
         </div>
+        <section>
+            <h2>Reasons</h2>
+            <p>
+                I created this page because I wanted to have a landing page for all my github projects. This gave me an opportunqity to make use of the HTML5 elements and Web Components (Through <a href="https://www.polymer-project.org/">Polymer</a>) for a cleaner markup.
+            </p>
+        </section>
     </main>
     <footer>
         <h4>Copyright &copy 2015 DarwinHang</h4>
