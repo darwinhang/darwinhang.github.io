@@ -6,12 +6,25 @@
 header {
 	.banner-style();
 
-	.nav-bar {
+	.top-bar {
 		color: @light-green;
 		font-size: 1.3em;
 
 		ul {
 			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		li {
+			padding: 1.3rem;
+		}
+
+		a {
+			color: @dark-green;
+			text-decoration: none;
 		}
 	}
 
