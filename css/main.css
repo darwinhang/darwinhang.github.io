@@ -19,11 +19,11 @@ html footer {
 }
 .banner-style {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  background: #f8fffa;
+  background: #ffffff;
 }
 header {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  background: #f8fffa;
+  background: #ffffff;
 }
 header .top-bar {
   color: #06d28c;
@@ -51,12 +51,12 @@ header .message {
 }
 main {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  background: #f8fffa;
+  background: #ffffff;
   text-align: center;
 }
 footer {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  background: #f8fffa;
+  background: #ffffff;
   background: #c1f9e5;
 }
 footer h4 {
