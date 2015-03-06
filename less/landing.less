@@ -18,13 +18,15 @@ header {
 			justify-content: flex-start;
 		}
 
-		li {
-			padding: 1.3rem;
-		}
-
 		a {
+			padding: 1.3rem;
+			display: block;
 			color: @dark-green;
 			text-decoration: none;
+		}
+		a:hover {
+			background-color: @off-white;
+			color: @light-green;
 		}
 	}
 
@@ -33,6 +35,11 @@ header {
 		color: @white;
 		background: @light-green;	
 		text-align: center;
+
+		.reasons {
+			width: 75%;
+			padding-top: 2.3rem;
+		}
 	}
 }
 

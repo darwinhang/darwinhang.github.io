@@ -4,14 +4,42 @@
 <polymer-element name="gh-profile" attributes="username">
 	<template>
 		<style>
-			#gh-profile-summary {
+			h2 {
+				color: #00b04d;
+			}
+			#gh-summary {
 				display: flex;
 				flex-wrap: wrap;
 			}
 			#github-avatar {
+				flex: 1;
 				width: 15%;
 				height: 15%;
-				border-radius:50%;
+				border-radius:15%;
+			}
+			.repos {
+				/* put this is media query for larger screens*/
+				flex: 1;
+				text-align: left;
+				list-style: none;
+				border-radius: 3px;
+				background-color: #00b04d;
+				padding: 5px;
+			}
+			.repos li {
+				padding: 5px;
+			}
+			.repos a {
+				display: block;
+				text-decoration: none;
+				color: #F8FFFA;
+			}
+			.repos a:hover {
+				background-color: #F8FFFA;
+				color: #06D25E;
+			}
+			.repo-name {
+				font-weight: bold;
 			}
 		</style>
 		<core-ajax 
@@ -20,12 +48,12 @@
 			handleAs="json" 
 			response="{{resp}}">
 		</core-ajax>
-		<section id="gh-profile-summary">
-			<h4>{{username}} repos</h4>
-			<img id="github-avatar" src="{{resp[0].owner.avatar_url}}" alt="Github Profile"></img>
-			<ul>
+		<img id="github-avatar" src="{{resp[0].owner.avatar_url}}" alt="Github Profile"></img>
+		<h2>{{username}} repos</h2>
+		<section id="gh-summary">
+			<ul class="repos">
 				<template repeat="{{r in resp}}">
-					<li><a href="{{r.html_url}}">{{r.name}}</a></li>
+					<li><a href="{{r.html_url}}"><span class="repo-name">{{r.name}}</span> {{r.description}}</a></li>
 				</template>
 			</ul>
 		</section>

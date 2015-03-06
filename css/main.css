@@ -26,7 +26,7 @@ header {
   background: #ffffff;
 }
 header .top-bar {
-  color: #06d28c;
+  color: #06d25e;
   font-size: 1.3em;
 }
 header .top-bar ul {
@@ -36,18 +36,25 @@ header .top-bar ul {
   display: flex;
   justify-content: flex-start;
 }
-header .top-bar li {
-  padding: 1.3rem;
-}
 header .top-bar a {
-  color: #00b07b;
+  padding: 1.3rem;
+  display: block;
+  color: #00b04d;
   text-decoration: none;
+}
+header .top-bar a:hover {
+  background-color: #f8fffa;
+  color: #06d25e;
 }
 header .message {
   height: 12em;
   color: #ffffff;
-  background: #06d28c;
+  background: #06d25e;
   text-align: center;
+}
+header .message .reasons {
+  width: 75%;
+  padding-top: 2.3rem;
 }
 main {
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -60,7 +67,7 @@ footer {
   background: #c1f9e5;
 }
 footer h4 {
-  color: #00b07b;
+  color: #00b04d;
   text-align: center;
 }
 .gh-username {
@@ -68,11 +75,10 @@ footer h4 {
 }
 .gh-info {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 1.3em 0;
 }
 .gh-info gh-profile {
-  width: 50%;
+  width: 90%;
   padding: 50px;
 }
