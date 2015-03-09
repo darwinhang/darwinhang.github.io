@@ -1,3 +1,4 @@
+@import "../components/octicons/octicons.css";
 html {
   height: 100%;
 }
@@ -59,6 +60,8 @@ header .message {
 }
 header .message .reasons {
   width: 75%;
+  margin: auto;
+  padding-top: 1.5rem;
 }
 main {
   font-family: Verdana, Arial, Helvetica, sans-serif;
