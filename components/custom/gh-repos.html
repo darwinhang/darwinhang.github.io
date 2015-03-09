@@ -1,11 +1,13 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../core-ajax/core-ajax.html">
 
-<polymer-element name="gh-profile" attributes="username">
+<polymer-element name="gh-repos" attributes="username">
 	<template>
+		<link rel="stylesheet" href="../octicons/octicons.css">
 		<style>
 			h2 {
 				color: #00b04d;
+				text-decoration: underline;
 			}
 			#gh-summary {
 				display: flex;
@@ -48,12 +50,21 @@
 			handleAs="json" 
 			response="{{resp}}">
 		</core-ajax>
-		<img id="github-avatar" src="{{resp[0].owner.avatar_url}}" alt="Github Profile"></img>
 		<h2>{{username}} repos</h2>
 		<section id="gh-summary">
 			<ul class="repos">
-				<template repeat="{{r in resp}}">
-					<li><a href="{{r.html_url}}"><span class="repo-name">{{r.name}}</span> {{r.description}}</a></li>
+				<template repeat="{{ r in resp }}">
+					<li>
+						<a href="{{ r.html_url }}">
+							<template if="{{ r.fork }}">
+								<span class="octicon octicon-repo-forked"></span>
+							</template>
+							<template if="{{ !r.fork }}">
+								<span class="octicon octicon-repo"></span>
+							</template>
+							<span class="repo-name">{{ r.name }}</span> {{ r.description }}
+						</a>
+					</li>
 				</template>
 			</ul>
 		</section>

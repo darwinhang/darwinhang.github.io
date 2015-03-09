@@ -46,15 +46,19 @@ header .top-bar a:hover {
   background-color: #f8fffa;
   color: #06d25e;
 }
+header .top-bar a:target {
+  transition-property: background-color;
+  transition-duration: 1s;
+  background-color: gray;
+}
 header .message {
   height: 12em;
   color: #ffffff;
-  background: #06d25e;
+  background: #00b04d;
   text-align: center;
 }
 header .message .reasons {
   width: 75%;
-  padding-top: 2.3rem;
 }
 main {
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -78,7 +82,7 @@ footer h4 {
   justify-content: center;
   margin: 1.3em 0;
 }
-.gh-info gh-profile {
+.gh-info gh-repos {
   width: 90%;
   padding: 50px;
 }
