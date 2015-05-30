@@ -21,7 +21,7 @@
     "octicons": "~2.2.0"
   },
   "dependencies": {
-    "webcomponentsjs": "~0.5.4",
-    "core-ajax": "Polymer/core-ajax#~0.5.4"
+    "core-ajax": "Polymer/core-ajax#~0.5.4",
+    "polymer": "Polymer/polymer#^1.0.0"
   }
 }
